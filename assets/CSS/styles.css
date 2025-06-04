@@ -5,6 +5,8 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
+
+
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
@@ -197,6 +199,12 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+
+
+}
+
+.homee {
+  background-color: rgb(13, 13, 38);
 }
 
 .home__data {
@@ -206,6 +214,7 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  color: rgb(219, 211, 211);
 }
 
 .home__title-color {
@@ -221,7 +230,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: #fff;
 }
 
 .home__social-icon:hover {
@@ -243,14 +252,16 @@ img {
 
 .home__blob-img {
   width: 390px;
+  margin-bottom: 62px;
   /* padding-bottom: 35px;
   padding-left: 20px; */
-  border-radius: 50%;
+  border-radius: 10%;
+  image-orientation: square;
   transition: .5s ease-in-out;
 }
 
 .home__blob-img:hover {
-  box-shadow: 0 0 25px black,
+  box-shadow: 0 0 25px rgb(170, 163, 163),
     0 0 40px black,
     0 0 6px black;
 }
@@ -267,7 +278,7 @@ img {
 }
 
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 36px rgba(84, 84, 84, 0.918);
 }
 
 .text-animation {
@@ -282,13 +293,14 @@ img {
 
 .text-animation span::before {
   content: "Web Developer";
-  color: black;
+  color: rgb(107, 100, 100);
   animation: words 20s infinite;
 }
 
 .text-animation span::after {
   content: "";
-  background-color: white;
+  background-color: rgb(13, 13, 38);
+
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
@@ -390,10 +402,12 @@ h3 {
 
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  text-align: center;
 }
 
 .skills__text {
   margin-bottom: var(--mb-4);
+  text-align: center;
 }
 
 .skills__data {
@@ -408,6 +422,10 @@ h3 {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
+.skill_video {
+  width: 130px;
+}
+
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
@@ -417,6 +435,8 @@ h3 {
 .skills__names {
   display: flex;
   align-items: center;
+  font-size: 25px;
+  /* padding-left: 0px; */
 }
 
 .skills__bar {
@@ -430,20 +450,9 @@ h3 {
 }
 
 .skills__html {
-  width: 80%;
+  width: 100%;
 }
 
-.skills__css {
-  width: 60%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__ux {
-  width: 70%;
-}
 
 .skills__img {
   border-radius: 0.5rem;
