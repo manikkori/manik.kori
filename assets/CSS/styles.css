@@ -82,7 +82,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: black;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -165,7 +165,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color:black;
 }
 
 .nav__logo {
@@ -186,7 +186,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color:black;
 }
 
 /*=== Show menu ===*/
@@ -194,6 +194,21 @@ img {
   right: 0;
 }
 
+/*dark mode*/
+
+
+.dark-mode-toggle {
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.dark-mode-toggle label {
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;  /* Increased label font size */
+}
 /*===== HOME =====*/
 .home {
   
@@ -472,7 +487,7 @@ h3 {
   text-align: center;
   justify-content: center;
   row-gap: 2rem;
-  display: grid;
+  display: block;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -490,9 +505,11 @@ h3 {
 
 /* ===== WORK =====*/
 .service {
-  background-color:rgb(13, 13, 38);
+  /* background-color:rgb(13, 13, 38); */
   width: 100%;
   height: 100%;
+  margin-top: -100px;
+  margin-bottom: -200px;
 
 }
 
@@ -520,25 +537,31 @@ h3 {
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-  grid-gap: 30px;
-  margin-top: 60px;
+  grid-gap: 60px;
+
+  margin: 50px;
   align-items: center;
   text-align: justify;
   justify-content: center;
-
+  
+}
+.services-list :hover{
+  background-color: rgb(220, 247, 250);
 }
 
 .services-list div {
   border-color: transparent;
-  background-color: rgb(13, 13, 38);
+  /* background-color: rgb(13, 13, 38); */
   padding: 30px;
   font-size: 13px;
+  color: black;
   font-weight: 13px;
-  border-radius: 10px;
-  border-radius: 20px;
+  border-radius: 4px;
+  
+  border: 2px solid black;
   transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #588aac,
-    1px 1px 60px #133986;
+  /* box-shadow: 1px 1px 20px #588aac,
+    1px 1px 60px #133986; */
   background-image: var(--fourth-bg-color);
 }
 
@@ -561,14 +584,17 @@ h3 {
   display: inline-block;
 
 }
-
-.services-list div:hover {
+.projectreveal:hover{
   transform: translateY(-10px);
 }
 
 
-/* ===== CONTACT =====*/
 
+
+/* ===== CONTACT =====*/
+/* #contact{
+  display: grid;
+} */
 
 .contact__input {
 
