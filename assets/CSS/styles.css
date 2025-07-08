@@ -536,7 +536,7 @@ h3 {
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 60px;
 
   margin: 50px;
